@@ -5,7 +5,7 @@ node_js:
   - '0.12'
   - 'iojs-3'
   - '4'
-script: 'npm run verify'
+script: 'npm run verify:ci'
 install:
   - 'travis_retry npm install'
 addons:

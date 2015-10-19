@@ -5,12 +5,12 @@ clone_depth: 20
 
 environment:
   matrix:
-  - nodejs_version: 0.10
-  - nodejs_version: 0.12
   - nodejs_version: 4
 
 # install
 install:
+- choco install firefox
+- choco install googlechrome
 - ps: . .\Execute-With-Retry
 - ps: Execute-With-Retry { Install-Product node $env:nodejs_version }
 - node --version
@@ -22,7 +22,7 @@ build: off
 
 # test
 test_script:
-- npm run verify
+- npm run verify:appveyor
 
 # deploy
 deploy: off

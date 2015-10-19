@@ -1,10 +1,8 @@
 'use strict';
 var assert = require('power-assert');
 var createLinkPlain = require('./');
+var startsWith = require('lodash.startswith');
 
-it('should ', function () {
-  assert.strictEqual(createLinkPlain('unicorns'), 'unicorns & rainbows');
-});
-it('should not ', function () {
-  assert.strictEqual(createLinkPlain('unicorns'), 'unicorns & wrong');
+it('should be title and url', function () {
+  assert(startsWith(createLinkPlain(), 'Test\'em http://localhost:'));
 });

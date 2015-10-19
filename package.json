@@ -9,15 +9,21 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "browserify": "^11.2.0",
     "conventional-changelog": "^0.5.0",
     "eclint": "^1.1.5",
     "eslint": "^1.7.1",
     "espower-loader": "^1.0.0",
+    "espowerify": "^1.0.0",
     "fixpack": "^2.2.0",
     "globstar": "^1.0.0",
+    "lodash.startswith": "^3.0.1",
     "mocha": "^2.3.3",
     "npm-check-updates": "^2.3.2",
+    "object-assign": "^4.0.1",
     "power-assert": "^1.1.0",
+    "rimraf": "^2.4.3",
+    "testem": "^0.9.8",
     "touch": "^1.0.0"
   },
   "engines": {
@@ -32,14 +38,20 @@
   "license": "MIT",
   "repository": "sanemat/create-link-plain",
   "scripts": {
+    "build:browser": "exit 1",
+    "build:example-bundled": "exit 1",
+    "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
-    "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
-    "eslint": "eslint .",
+    "clear:test-bundled": "rimraf ./test-bundled.js",
+    "eclint": "globstar --ignore \"{node_modules/**,test-bundled.js}\" -- eclint check \"*.{js,yml,md,json}\"",
+    "eslint": "eslint --ignore-path .gitignore index.js test.js testem.js",
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
     "ncu": "ncu -u",
-    "test": "mocha --require ./enable-power-assert.js -- ./test.js",
-    "verify": "npm run lint && npm run test"
+    "test": "testem",
+    "verify": "npm run lint && npm run test",
+    "verify:appveyor": "npm run lint && npm run test -- --file testem.appveyor.js ci",
+    "verify:travis": "npm run lint && npm run test -- --file testem.travis.js ci"
   }
 }

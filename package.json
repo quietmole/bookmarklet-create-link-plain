@@ -20,6 +20,7 @@
     "lodash.startswith": "^3.0.1",
     "mocha": "^2.3.3",
     "npm-check-updates": "^2.3.2",
+    "object-assign": "^4.0.1",
     "power-assert": "^1.1.0",
     "rimraf": "^2.4.3",
     "testem": "^0.9.8",
@@ -43,14 +44,14 @@
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "clear:test-bundled": "rimraf ./test-bundled.js",
     "eclint": "globstar --ignore \"{node_modules/**,test-bundled.js}\" -- eclint check \"*.{js,yml,md,json}\"",
-    "eslint": "eslint --ignore-path .gitignore index.js test.js",
+    "eslint": "eslint --ignore-path .gitignore index.js test.js testem.js",
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
     "ncu": "ncu -u",
     "test": "testem",
-    "test:ci": "testem ci",
     "verify": "npm run lint && npm run test",
-    "verify:ci": "npm run lint && npm run test:ci"
+    "verify:appveyor": "npm run lint && npm run test -- --file testem.appveyor.js ci",
+    "verify:travis": "npm run lint && npm run test -- --file testem.travis.js ci"
   }
 }

@@ -1,6 +1,6 @@
 'use strict';
 /**
-  * @return {string} plain-text title and url from current page.
+  * @return {string} plain-text title from current page.
   **/
 module.exports = function () {
   return window.document.title;

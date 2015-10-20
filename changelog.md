@@ -5,4 +5,4 @@
 
 ### Features
 
-* **main:** add implementation ([7a00f20](https://github.com/quietmole/node-link-plain/commit/7a00f20))
+* **main:** add implementation ([7a00f20](https://github.com/quietmole/browser-title-or-selection/commit/7a00f20))

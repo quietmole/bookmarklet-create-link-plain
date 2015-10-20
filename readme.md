@@ -29,7 +29,7 @@ browserTitleOrSelection();
 
 ### browserTitleOrSelection() -> String
 
-*Title**(Space)**Url*
+*Title*
 
 
 ## Changelog

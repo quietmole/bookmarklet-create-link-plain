@@ -10,5 +10,6 @@ module.exports = {
     './node_modules/power-assert/build/power-assert.js',
     './test-bundled.js'
   ],
+  test_page: './mocharunner.mustache',
   'launch_in_dev': ['Firefox', 'Chrome', 'IE', 'Safari']
 };

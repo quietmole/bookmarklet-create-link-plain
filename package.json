@@ -31,7 +31,8 @@
     "node": ">=4.0.0"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "build"
   ],
   "keywords": [
     "bookmarklet",

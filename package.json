@@ -1,6 +1,6 @@
 {
-  "name": "create-link-plain",
-  "description": "My spectacular module",
+  "name": "link-plain",
+  "description": "Create plain link from current page (for bookmarklet)",
   "version": "0.0.0",
   "author": {
     "name": "sanemat",
@@ -27,19 +27,20 @@
     "touch": "^1.0.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "files": [
     "index.js"
   ],
   "keywords": [
-    ""
+    "bookmarklet",
+    "browser",
+    "link"
   ],
   "license": "MIT",
-  "repository": "sanemat/create-link-plain",
+  "repository": "quietmole/node-link-plain",
   "scripts": {
     "build:browser": "exit 1",
-    "build:example-bundled": "exit 1",
     "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "clear:test-bundled": "rimraf ./test-bundled.js",

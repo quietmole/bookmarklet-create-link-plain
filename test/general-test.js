@@ -4,5 +4,5 @@ var linkPlain = require('../');
 var startsWith = require('lodash.startswith');
 
 it('should be title and url', function () {
-  assert(startsWith(linkPlain(), 'Test\'em http://localhost:'));
+  assert(startsWith(linkPlain(), 'General http://localhost:'));
 });

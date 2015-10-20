@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>General</title>
+<link rel="stylesheet" href="/testem/mocha.css">
+<script src="/testem/mocha.js"></script>
+<script src="/testem.js"></script>
+<script>mocha.setup('bdd')</script>
+<script src="./node_modules/power-assert/build/power-assert.js"></script>
+<script src="./general-test-bundled.js"></script>
+{{#styles}}<link rel="stylesheet" href="{{.}}">{{/styles}}
+</head>
+<body>
+<div id="mocha"></div>
+<script>
+mocha.run()
+</script>
+</body>
+</html>

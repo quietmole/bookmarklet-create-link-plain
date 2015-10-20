@@ -16,6 +16,8 @@ $ npm install --save link-plain
 
 ```js
 var linkPlain = require('link-plain');
+// or
+<script src="build/link-plain.js"></script>
 
 linkPlain();
 //=> 'quietmole/bookmarklet-create-link-plain https://github.com/quietmole/bookmarklet-create-link-plain'

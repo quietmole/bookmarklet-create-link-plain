@@ -1,33 +1,33 @@
-# link-plain
+# browser-title-or-selection
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> Create plain link from current page (for bookmarklet)
+> Get current page title or selection text.
 
 
 ## Install
 
 ```
-$ npm install --save link-plain
+$ npm install --save browser-title-or-selection
 ```
 
 
 ## Usage
 
 ```js
-var linkPlain = require('link-plain');
+var browserTitleOrSelection = require('browser-title-or-selection');
 // or
-<script src="build/link-plain.js"></script>
+<script src="build/browser-title-or-selection.js"></script>
 
-linkPlain();
-//=> 'quietmole/bookmarklet-create-link-plain https://github.com/quietmole/bookmarklet-create-link-plain'
+browserTitleOrSelection();
+//=> 'quietmole/browser-title-or-selection'
 ```
 
 
 
 ## API
 
-### linkPlain() -> String
+### browserTitleOrSelection() -> String
 
 *Title**(Space)**Url*
 
@@ -42,11 +42,11 @@ linkPlain();
 MIT © [sanemat](http://sane.jp)
 
 
-[travis-url]: https://travis-ci.org/quietmole/node-link-plain
-[travis-image]: https://img.shields.io/travis/quietmole/node-link-plain/master.svg?style=flat-square&label=build%20%28linux%29
-[appveyor-url]: https://ci.appveyor.com/project/sanemat/node-link-plain/branch/master
-[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/node-link-plain/master.svg?style=flat-square&label=build%20%28windows%29
-[npm-url]: https://npmjs.org/package/link-plain
-[npm-image]: https://img.shields.io/npm/v/link-plain.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/quietmole/node-link-plain
-[daviddm-image]: https://img.shields.io/david/quietmole/node-link-plain.svg?style=flat-square
+[travis-url]: https://travis-ci.org/quietmole/browser-title-or-selection
+[travis-image]: https://img.shields.io/travis/quietmole/browser-title-or-selection/master.svg?style=flat-square&label=build%20%28linux%29
+[appveyor-url]: https://ci.appveyor.com/project/sanemat/browser-title-or-selection/branch/master
+[appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/browser-title-or-selection/master.svg?style=flat-square&label=build%20%28windows%29
+[npm-url]: https://npmjs.org/package/browser-title-or-selection
+[npm-image]: https://img.shields.io/npm/v/browser-title-or-selection.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/quietmole/browser-title-or-selection
+[daviddm-image]: https://img.shields.io/david/quietmole/browser-title-or-selection.svg?style=flat-square

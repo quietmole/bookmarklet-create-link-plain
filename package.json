@@ -1,6 +1,6 @@
 {
-  "name": "link-plain",
-  "description": "Create plain link from current page (for bookmarklet)",
+  "name": "browser-title-or-selection",
+  "description": "Get current page title or selection text.",
   "version": "1.0.0",
   "author": {
     "name": "sanemat",
@@ -40,9 +40,9 @@
     "link"
   ],
   "license": "MIT",
-  "repository": "quietmole/node-link-plain",
+  "repository": "quietmole/browser-title-or-selection",
   "scripts": {
-    "build:browser": "npm prune && npm dedupe && browserify --standalone linkPlain ./index.js | derequire > build/link-plain.js",
+    "build:browser": "npm prune && npm dedupe && browserify --standalone browserTitleOrSelection ./index.js | derequire > build/browser-title-or-selection.js",
     "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "clear:test-bundled": "rimraf ./test-bundled.js",

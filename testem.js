@@ -3,7 +3,7 @@ module.exports = {
   'before_tests': 'npm run clear:test-bundled && npm run build:test-bundled',
   'src_files': [
     'index.js',
-    'test.js'
+    'test/test.js'
   ],
   'on_exit': 'npm run clear:test-bundled',
   'serve_files': [

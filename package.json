@@ -43,11 +43,11 @@
   "repository": "quietmole/node-link-plain",
   "scripts": {
     "build:browser": "npm prune && npm dedupe && browserify --standalone linkPlain ./index.js | derequire > build/link-plain.js",
-    "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
+    "build:test-bundled": "browserify -t espowerify test/test.js > test-bundled.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "clear:test-bundled": "rimraf ./test-bundled.js",
     "eclint": "globstar --ignore \"{node_modules/**,test-bundled.js}\" -- eclint check \"*.{js,yml,md,json}\"",
-    "eslint": "eslint --ignore-path .gitignore index.js test.js testem.js",
+    "eslint": "eslint --ignore-path .gitignore index.js test/test.js testem.js",
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",

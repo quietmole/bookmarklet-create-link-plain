@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "link-plain": "file:.."
+  }
+}

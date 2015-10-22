@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "browser-title-or-selection": "file:.."
+    "browser-selected-text-or-title": "file:.."
   }
 }

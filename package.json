@@ -1,5 +1,5 @@
 {
-  "name": "browser-title-or-selection",
+  "name": "browser-selected-text-or-title",
   "description": "Get current page title or selection text.",
   "version": "2.0.0-beta.1",
   "author": {
@@ -39,9 +39,9 @@
     "link"
   ],
   "license": "MIT",
-  "repository": "quietmole/browser-title-or-selection",
+  "repository": "quietmole/browser-selected-text-or-title",
   "scripts": {
-    "build:browser": "npm prune && npm dedupe && browserify --standalone browserTitleOrSelection ./index.js | derequire > build/browser-title-or-selection.js",
+    "build:browser": "npm prune && npm dedupe && browserify --standalone browserSelectedTextOrTitle ./index.js | derequire > build/browser-selected-text-or-title.js",
     "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "clear:test-bundled": "rimraf ./test-bundled.js",

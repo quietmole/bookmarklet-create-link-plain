@@ -1,7 +1,7 @@
 {
   "name": "browser-selected-text-or-title",
   "description": "Get selected text or current page title.",
-  "version": "2.0.0-beta.1",
+  "version": "3.0.0-beta.1",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com",

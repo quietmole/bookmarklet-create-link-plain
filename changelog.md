@@ -1,3 +1,9 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/quietmole/browser-selected-text-or-title/compare/v3.0.0-beta.1...v3.0.0) (2015-10-22)
+
+* Ship it!
+
+
 <a name="3.0.0-beta.1"></a>
 # [3.0.0-beta.1](https://github.com/quietmole/browser-selected-text-or-title/compare/v2.0.0-beta.1...v3.0.0-beta.1) (2015-10-22)
 

@@ -18,6 +18,7 @@
     "espowerify": "^1.0.0",
     "fixpack": "^2.2.0",
     "globstar": "^1.0.0",
+    "mkdirp": "^0.5.1",
     "mocha": "^2.3.3",
     "npm-check-updates": "^2.3.2",
     "object-assign": "^4.0.1",
@@ -41,7 +42,7 @@
   "license": "MIT",
   "repository": "quietmole/browser-selected-text-or-title",
   "scripts": {
-    "build:browser": "npm prune && npm dedupe && browserify --standalone browserSelectedTextOrTitle ./index.js | derequire > build/browser-selected-text-or-title.js",
+    "build:browser": "npm prune && npm dedupe && mkdirp build/ && browserify --standalone browserSelectedTextOrTitle ./index.js | derequire > build/browser-selected-text-or-title.js",
     "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "clear:test-bundled": "rimraf ./test-bundled.js",

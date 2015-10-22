@@ -29,7 +29,7 @@ browserTitleOrSelection();
 
 ### browserTitleOrSelection() -> String
 
-*Title*
+*Selected text* OR *Title*
 
 
 ## Changelog

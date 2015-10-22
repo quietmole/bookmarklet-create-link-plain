@@ -1,7 +1,12 @@
 'use strict';
 /**
-  * @return {string} plain-text title from current page.
+  * @return {string} selected text or plain-text title from current page.
   **/
 module.exports = function () {
-  return window.document.title;
+  var selected = ('getSelection' in window ? window : document).getSelection().toString();
+  var title = window.document.title;
+  if (selected) {
+    return selected;
+  }
+  return title;
 };

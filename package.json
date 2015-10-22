@@ -1,6 +1,6 @@
 {
   "name": "browser-selected-text-or-title",
-  "description": "Get current page title or selection text.",
+  "description": "Get selected text or current page title.",
   "version": "2.0.0-beta.1",
   "author": {
     "name": "sanemat",

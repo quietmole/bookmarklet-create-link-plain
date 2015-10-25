@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('power-assert');
-var browserSelectedTextOrTitle = require('./');
+var browserSelectedText = require('./');
 
 it('should be title', function () {
-  assert(browserSelectedTextOrTitle() === 'Current page title');
+  assert(browserSelectedText() === 'Current page title');
 });

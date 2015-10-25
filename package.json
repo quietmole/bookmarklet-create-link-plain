@@ -1,6 +1,6 @@
 {
-  "name": "browser-selected-text-or-title",
-  "description": "Get selected text or current page title.",
+  "name": "browser-selected-text",
+  "description": "Get selected text.",
   "version": "3.0.0",
   "author": {
     "name": "sanemat",
@@ -31,7 +31,7 @@
   },
   "files": [
     "index.js",
-    "build/browser-selected-text-or-title.js"
+    "build/browser-selected-text.js"
   ],
   "keywords": [
     "bookmarklet",
@@ -41,9 +41,9 @@
     "title"
   ],
   "license": "MIT",
-  "repository": "quietmole/browser-selected-text-or-title",
+  "repository": "quietmole/browser-selected-text",
   "scripts": {
-    "build:browser": "npm prune && npm dedupe && browserify --standalone browserSelectedTextOrTitle ./index.js | derequire > build/browser-selected-text-or-title.js",
+    "build:browser": "npm prune && npm dedupe && browserify --standalone browserSelectedText ./index.js | derequire > build/browser-selected-text.js",
     "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "clear:test-bundled": "rimraf ./test-bundled.js",

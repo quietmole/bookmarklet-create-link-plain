@@ -27,7 +27,7 @@ browserSelectedText();
 
 ## API
 
-### browserSelectedText() -> String
+### browserSelectedText() -> ?String
 
 *Selected text*
 

@@ -1,3 +1,14 @@
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/quietmole/browser-selected-text/compare/v3.0.0...v4.0.0) (2015-10-25)
+
+* Rename package to browser-selected-text
+
+### Features
+
+* **selected:** support ie8 ([bd2802e](https://github.com/quietmole/browser-selected-text/commit/bd2802e))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/quietmole/browser-selected-text/compare/v3.0.0-beta.1...v3.0.0) (2015-10-22)
 

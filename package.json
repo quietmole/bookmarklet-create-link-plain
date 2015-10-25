@@ -29,9 +29,7 @@
   "keywords": [
     "bookmarklet",
     "browser",
-    "link",
-    "selection",
-    "title"
+    "selection"
   ],
   "license": "MIT",
   "repository": "quietmole/browser-selected-text",

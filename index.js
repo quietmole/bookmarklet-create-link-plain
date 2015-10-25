@@ -1,12 +1,17 @@
 'use strict';
 /**
-  * @return {string} selected text or plain-text title from current page.
+  * @return {?String} selected text.
   **/
 module.exports = function () {
-  var selected = ('getSelection' in window ? window : document).getSelection().toString();
-  var title = window.document.title;
-  if (selected) {
-    return selected;
+  var selected = '';
+  if (window.getSelection) {
+    selected = window.getSelection().toString();
+  } else if (document.getSelection) {
+    selected = document.getSelection().toString();
+  } else if (document.selection) {
+    selected = document.selection.createRange().text;
+  } else {
+    return null;
   }
-  return title;
+  return selected;
 };
